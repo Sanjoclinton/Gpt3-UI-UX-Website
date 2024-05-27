@@ -1,6 +1,7 @@
 import "./header.css";
-import people from "../../assets/people.png"
-import ai from "../../assets/ai.png"
+import people from "../../assets/people.png";
+import ai from "../../assets/ai.png";
+import LazyLoad from "react-lazyload";
 
 const Header = () => {
   return (
@@ -20,12 +21,12 @@ const Header = () => {
         </div>
 
         <div className="gpt3__header-content__people">
-          <img src={people} alt="people" />
+          <LazyLoad><img src={people} alt="ai" /></LazyLoad>
           <p>1,600 people requested access a visit in last 24 hours</p>
         </div>
       </div>
       <div className="gpt3__header-image">
-          <img src={ai} alt="ai" />
+          <LazyLoad><img src={ai} alt="ai" /></LazyLoad>
         </div>
     </div>
   );

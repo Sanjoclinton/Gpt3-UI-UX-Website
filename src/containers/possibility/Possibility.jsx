@@ -1,12 +1,12 @@
 import './possibility.css';
 import possibilityImage from '../../assets/possibility.png'
-
+import LazyLoad from "react-lazyload";
 
 const Possibility = () => {
   return (
     <div className='gpt3__possibility section__padding'>
       <div className="gpt3__possibility-image">
-        <img src={possibilityImage} alt="possibility" />
+        <LazyLoad><img src={possibilityImage} alt="possibility" /></LazyLoad>
       </div>
       <div className="gpt3__possibility-content">
         <h4>Request Early Access to Get Started</h4>

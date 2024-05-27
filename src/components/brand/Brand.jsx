@@ -1,26 +1,27 @@
-import './Brand.css';
-import { google, slack, atlassian, dropbox, shopify } from './import'
+import "./Brand.css";
+import { google, slack, atlassian, dropbox, shopify } from "./import";
+import LazyLoad from "react-lazyload";
 
 const Brand = () => {
   return (
-    <div className='gpt3__brand section__padding'>
+    <div className="gpt3__brand section__padding">
       <div>
-        <img src={ google } alt="google" />
+        <LazyLoad><img src={google} alt="google" /></LazyLoad>
       </div>
       <div>
-        <img src={ slack } alt="slack" />
+        <LazyLoad><img src={slack} alt="slack" /></LazyLoad>
       </div>
       <div>
-        <img src={ atlassian } alt="atlassian" />
+        <LazyLoad><img src={atlassian} alt="atlassian" /></LazyLoad>
       </div>
       <div>
-        <img src={ dropbox } alt="dropbox" />
+        <LazyLoad><img src={dropbox} alt="dropbox" /></LazyLoad>
       </div>
       <div>
-        <img src={ shopify } alt="shopify" />
+        <LazyLoad><img src={shopify} alt="shopify" /></LazyLoad>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Brand
+export default Brand;
